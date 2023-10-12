@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .subscription-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .subscription:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .subscription h2 {
+    margin: 0;
+    color: #3498db;
+  }
+  .subscription p {
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+<div class="subscription-container">
+  <a href="{{ url_first }}" class="subscription">
+    <h2>Monthly Subscription</h2>
+    <p>Here is your one-month subscription for $2</p>
+  </a>
+  <a href="{{ ulr_second }}" class="subscription">
+    <h2>Yearly Subscription</h2>
+    <p>Here is your yearly subscription for $50</p>
+  </a>
+</div>
+</body>
+</html>
